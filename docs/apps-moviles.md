@@ -25,8 +25,8 @@ Cada app lleva **fija en el código** la dirección del homelab (`src/api/server
 
 | App | Dirección |
 |---|---|
-| Portal | `https://servidor-homelab.tail13541c.ts.net:8443/api/v1` (portal-api) |
-| Bodega | `https://servidor-homelab.tail13541c.ts.net:10000/api/v1` (store-api) |
+| Portal | `https://karen.madebyjohan.xyz/api/v1` (portal-api) |
+| Bodega | `https://karen-tienda.madebyjohan.xyz/api/v1` (store-api) |
 
 No hay pantalla ni almacenamiento para cambiarla: un teléfono solo habla con ese servidor, y por ser HTTPS no
 hace falta permitir tráfico sin cifrar. Para desarrollar con `node start.js`, `EXPO_PUBLIC_API_URL` apunta Metro
