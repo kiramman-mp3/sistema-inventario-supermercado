@@ -2,7 +2,7 @@
   "name": "Supermercado Karen",
   "icon": "./assets/icon.png",
   "slug": "portal-mobile-karen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "orientation": "default",
   "android": {
     "package": "com.ecosistemakaren.portal",

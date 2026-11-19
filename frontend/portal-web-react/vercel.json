@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://servidor-homelab.tail13541c.ts.net:8443/api/:path*" },
+    { "source": "/api/:path*", "destination": "https://karen.madebyjohan.xyz/api/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
