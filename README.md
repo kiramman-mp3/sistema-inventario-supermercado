@@ -17,7 +17,7 @@
 El repositorio se desarrolló en equipo a partir del 15 de septiembre de 2026 (fecha del primer commit) e incluye el backend, el portal web, la app móvil de clientes y la app móvil de bodega. La versión **1.0.0** está desplegada: el portal web en Vercel y las dos APIs con sus bases de datos en un servidor propio (homelab). Los datos de ejemplo corresponden a un catálogo de productos que se comercializan en Ecuador.
 
 > [!TIP]
-> La forma más rápida de verlo es el portal en producción: <https://karen-portal.vercel.app>. Las apps de Android (y la de iPhone, sin firmar) se descargan de la [versión 1.0.0](https://github.com/kiramman-mp3/EcosistemaKaren/releases/tag/v1.0.0).
+> La forma más rápida de verlo es el portal en producción: <https://karen.madebyjohan.xyz>. Las apps de Android (y la de iPhone, sin firmar) se descargan de la [versión 1.0.0](https://github.com/kiramman-mp3/EcosistemaKaren/releases/tag/v1.0.0).
 >
 > Para correrlo en local hacen falta Node.js ≥ 20 y Docker: `node start.js` en la raíz instala las dependencias, crea el `.env`, levanta PostgreSQL con datos de demostración, el backend, el portal web y Expo. Las cuentas de demostración están en la sección «Uso y Ejecución».
 
@@ -287,9 +287,9 @@ La versión 1.0.0 corre así:
 
 | Qué | Dónde | Dirección |
 |---|---|---|
-| Portal web | Vercel, proyecto `karen-portal`, publicado desde `main` | <https://karen-portal.vercel.app> |
-| `portal-api` | Homelab, Docker Compose, Tailscale Funnel `:8443` | `https://servidor-homelab.tail13541c.ts.net:8443/api/v1` |
-| `store-api` | Homelab, Docker Compose, Tailscale Funnel `:10000` | `https://servidor-homelab.tail13541c.ts.net:10000/api/v1` |
+| Portal web | Homelab, Docker Compose (Caddy), Cloudflare Tunnel | <https://karen.madebyjohan.xyz> |
+| `portal-api` | Homelab, Docker Compose, Cloudflare Tunnel | `https://karen.madebyjohan.xyz/api/v1` |
+| `store-api` | Homelab, Docker Compose, Cloudflare Tunnel | `https://karen-tienda.madebyjohan.xyz/api/v1` |
 | Bases de datos | PostgreSQL de cada servicio, en el mismo servidor | solo la red interna de Docker |
 
 | Documento | Contenido |
